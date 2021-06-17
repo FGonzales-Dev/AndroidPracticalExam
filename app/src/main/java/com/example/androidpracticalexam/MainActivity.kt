@@ -6,9 +6,7 @@ import android.util.Log
 import android.view.Menu
 import android.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
 import com.example.androidpracticalexam.adapter.CountryListAdapter
-
 import com.example.androidpracticalexam.model.Country
 import kotlinx.android.synthetic.main.activity_main.recyclerViewCountry
 import com.example.androidpracticalexam.service.CountryService
@@ -29,16 +27,9 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-
         setContentView(R.layout.activity_main)
-
-
         countryService.getAllCountries().enqueue(object: retrofit2.Callback<List<Country>> {
-
-
             override fun onResponse(call: Call<List<Country>>, response: Response<List<Country>>) {
-                Log.d("response", response.body().toString())
-
                 if (response.isSuccessful){
                     val records = response.body()
                     countryRecord = records as MutableList<Country>
@@ -46,19 +37,12 @@ class MainActivity : AppCompatActivity() {
                     tempCountryRecord.addAll(countryRecord)
                     recyclerViewCountry.adapter?.notifyDataSetChanged()
                 }
-
             }
 
             override fun onFailure(call: Call<List<Country>>, t: Throwable) {
-
                 Log.d("Error", t.localizedMessage)
             }
-
-
         })
-
-
-
     }
 
 
@@ -86,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                     tempCountryRecord.addAll(countryRecord)
                     recyclerViewCountry.adapter?.notifyDataSetChanged()
                 }
-             return false
+                return false
             }
         })
         return super.onCreateOptionsMenu(menu)
@@ -94,8 +78,5 @@ class MainActivity : AppCompatActivity() {
     private fun loadCountry(country: MutableList<Country>) {
         recyclerViewCountry.layoutManager = LinearLayoutManager(applicationContext)
         recyclerViewCountry.adapter = CountryListAdapter(applicationContext,  country)
-
     }
-
-
 }

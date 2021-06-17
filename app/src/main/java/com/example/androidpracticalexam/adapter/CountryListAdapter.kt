@@ -2,24 +2,18 @@ package com.example.androidpracticalexam.adapter
 
 import android.content.Context
 import android.content.Intent
-import android.graphics.drawable.PictureDrawable
-import android.net.Uri
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import coil.ImageLoader
-import coil.decode.SvgDecoder
-import coil.request.ImageRequest
 import com.example.androidpracticalexam.CountryDetailActivity
 import com.example.androidpracticalexam.HelperFunction.loadSvg
-
 import com.example.androidpracticalexam.R
 import com.example.androidpracticalexam.model.Country
 import kotlinx.android.synthetic.main.country_cardview.view.*
-import java.io.Serializable
+
 
 
 class MyHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
@@ -39,9 +33,9 @@ class CountryListAdapter(
 )
     : RecyclerView.Adapter<MyHolder>() {
     companion object Details {
-          var countryName : String? = null
+        var countryName : String? = null
         var countryFlag : String? = null
-            var countryRegion : String? = null
+        var countryRegion : String? = null
         var countryCapital: String? = null
         var countryPopulation: String? = null
         var countryCurrencyName: String? = null
@@ -68,10 +62,7 @@ class CountryListAdapter(
     override fun onBindViewHolder(holder: MyHolder, position: Int) {
 
         val record = countryRecord[position]
-
-
         holder.bind(record)
-
         holder.itemView.setOnClickListener {
             countryName = record.name
             countryFlag = record.flag
@@ -85,7 +76,6 @@ class CountryListAdapter(
             countryCallingCodes = record.callingCodes.toString()
             countrylat = record.latlng[0]
             countrylng = record.latlng[1]
-
             countryBorders  = record.borders.toMutableList().toString()
 
             val intent = Intent(Intent(context, CountryDetailActivity::class.java))

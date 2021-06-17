@@ -2,13 +2,11 @@ package com.example.androidpracticalexam
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.example.androidpracticalexam.HelperFunction.loadSvg
 import com.example.androidpracticalexam.adapter.CountryListAdapter
-
 import kotlinx.android.synthetic.main.activity_country_detail.*
-import kotlin.math.log
+
 
 
 class CountryDetailActivity : AppCompatActivity() {
