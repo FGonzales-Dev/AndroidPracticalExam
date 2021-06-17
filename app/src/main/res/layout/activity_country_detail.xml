@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp"
+    android:layout_gravity ="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".CountryDetailActivity">
+
+    <ImageView
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/countryDetailFlag"
+        android:layout_width="150dp"
+        android:layout_height="150dp"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical">
+    <TextView
+        android:textSize="15dp"
+       android:textColor="@color/black"
+        android:text="name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Capital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Region"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Population"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Calling Codes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Currency Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Currency Symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Language Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Language Native Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Borders"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+    <TextView
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:text="Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        />
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:textSize="15dp"
+            android:id="@+id/countryDetailname"
+            android:text="name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/countryDetailcapital"
+            android:textSize="15dp"
+            android:text="Capital"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/countryDetailregion"
+            android:textSize="15dp"
+            android:text="Region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/countryDetailpopulation"
+            android:textSize="15dp"
+            android:text="Population"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/countryDetailCallingCodes"
+            android:textSize="15dp"
+            android:text="Calling Codes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/countryDetailCurrencyName"
+            android:textSize="15dp"
+            android:text="Currency Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/countryDetailCurrencySymbol"
+            android:textSize="15dp"
+            android:text="Currency Symbol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/countryDetailLanguageName"
+            android:textSize="15dp"
+            android:text="Language Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+
+        <TextView
+            android:id="@+id/countryDetailLanguageNativeName"
+            android:textSize="15dp"
+            android:text="Language Native Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+
+            android:id="@+id/countryDetailBorders"
+            android:textSize="15dp"
+            android:text="Borders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+
+            android:id="@+id/countryDetailLatitude"
+            android:textSize="15dp"
+            android:text="Latitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            />
+        <TextView
+            android:id="@+id/countryDetailLongitude"
+            android:textSize="15dp"
+            android:text="Longitude"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+    <Button
+
+        android:id="@+id/btnGoToMap"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="See Map"/>
+</LinearLayout>
